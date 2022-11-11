@@ -46,9 +46,9 @@ export class ContactForm extends PureComponent {
     }
 
     this.onSubmit({
+      id: nanoid(),
       name,
       number,
-      id: nanoid(),
     });
 
     this.setState({
